@@ -1,11 +1,24 @@
+body{
+    width: 60%;
+    margin-left: 20%;
+    /* background-color: green; */
+    align-items: center;
+    align-content: center;
+
+}
+
 .header{
+    background-color: white;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px rgba(128, 128, 128, 0.5) solid;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
 }
 
 .leftheader{
-    width: 18%;
+    width: 200px;
     display: flex;
     align-items: center;
     margin-left: 20px;
@@ -28,7 +41,7 @@
 }
 .rightheader{
     display: flex;
-    width: 18%;
+    width: 200px;
     justify-content: space-between;
     align-items: center;
     margin-right: 20px;
@@ -66,17 +79,21 @@
     color: green;
 }
 
+.hero{
+    position: relative;
+}
 .heroimg{
     width: 100%;
+    object-fit: cover;  
 }
 
-.herodivs{
+.herodivs {
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    top: 550px;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
     width: 90%;
-    margin-left: 5%;
     color: white;
     align-items: center;
 }
@@ -115,4 +132,115 @@
 .herolist4img{
     width: 50px;
     border-radius: 50%;
+}
+
+.videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.videolist{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.video{
+    width: 23%;
+}
+
+.video img{
+    width: 100%;
+}
+
+
+.editorpick{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rowtopic{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.rowimg {
+    width: 50%;
+    margin: 0% 3% 5%;
+    /* margin-bottom: 5%; */
+    
+}
+
+.details{
+    width: 50%;
+}
+.row h3{
+    font-size: 10px;
+    background-color: green;
+    display: inline-block;
+    padding: 5px;
+    color: white;
+}
+
+.row h4{
+    font-size: 10px;
+    color: green;
+
+}
+
+.row p{
+    font-size: 20px;
+}
+
+.botbotlist{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.botvideo{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: green;
+}
+.botvideo img{
+    width: 90%;
+
+}
+
+.green{
+    background-color: #005f2b;
+    height: 300px;
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.green img{
+    width: 20%;
+}
+.green p{
+    width: 50%;
+    color: white;
+}
+
+.green a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 10px 10px 10px;
+
 }
