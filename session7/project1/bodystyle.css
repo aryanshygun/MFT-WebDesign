@@ -1,0 +1,269 @@
+body a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: filter .3s ease;
+    color: #404040;
+    font-weight: 500;
+}
+body a:hover{
+    text-decoration-line: underline;
+    filter: brightness(70%);
+}
+body p{
+    color: #404040;
+    margin: 0px;
+    font-weight: 200;
+    padding: 3px;
+}
+
+body h2{
+    font-size: 35px;
+    color: #404040;
+    margin: 0px;
+    line-height: 125%;
+    padding: 3px;
+
+}
+
+body h6{
+    margin: 0px;
+    font-weight: 200;
+    color: #616161;
+    font-size: 12px;
+    padding: 3px;
+
+}
+body img{
+    width: 100%;
+}
+
+.bodycontainer{
+    background-color: rgb(197, 225, 226);
+    width: 1200px;
+    margin: 24px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(74, 74, 74);
+    padding-bottom: 30px;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.storyheader{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.storyheader a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.storyheader .list{
+    display: flex;
+    gap: 20px;
+}
+
+.storyheader .list a{
+    border-left: 2px solid black;
+    padding-left: 10px;
+}
+
+.storyheader a img{
+    width: 30px;
+}
+.storyheader a img:hover{
+    width: 30px;
+    filter: none;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
+.section1 .story{
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+}
+
+.section1 .card1{
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+    justify-content: space-between;
+}
+
+.section1 .cluster{
+    flex: 1;
+}
+
+.section1 .card1 .text{
+    flex: 1;
+}
+
+.section1 .card1 .picture{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.section1 .card2{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+
+.section1 .card2 .text{
+    flex: 2;
+}
+
+.section1 .card2 .picture{
+    flex: 1;
+    justify-content: end;
+}
+.section1 .card2 .picture img{
+    width: 50%;
+}
+
+.section2 .card{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+    justify-content: space-between;
+}
+.section2 .card .text{
+    flex: 1;
+}
+.section2 .card .picture{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    align-content: end;
+    align-items: end;
+}
+
+.section2 .sidebar{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+
+}
+
+.section2 .sidebar hr{
+    width: 80%;
+    color: rgb(152, 152, 152);
+}
+
+.hero .bodycontainer{
+    display: flex;
+    flex-direction: row;
+    border: 0px;
+}
+
+.herotext{
+    flex: 1;
+    background-color: #1b1b1b;
+    align-content: center;
+    /* padding: 20px; */
+    /* box-sizing: border-box; */
+}
+
+.herotext a{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+}
+
+.heroimg{
+    flex: 2;
+}
+
+.herotext h2{
+    font-size: 25px;
+    color: white;
+}
+
+.herotext a:hover{
+    filter: none;
+}
+
+
+.section3 .card{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.section3 .picture{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+.section3 .picture img{
+    height: 260px;
+}
+
+
+
+.section4 .card{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.section4 .picture{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+
+}
+
+.section4 .picture img{
+    height: 190px;
+}
+
+
+
+
+
+@media screen and (min-width:1024px) and (max-width: 1439px) {
+    body{
+        background-color: cadetblue;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    body{
+        background-color: olivedrab;
+        
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body{
+        background-color: orange;
+    }
+}
