@@ -1,0 +1,14 @@
+
+@media screen and (min-width:900px) and (max-width: 1439px) {
+    body{
+        background-color: cadetblue;
+    }
+    
+}
+
+@media screen and (max-width: 899px) {
+    body{
+        background-color: rgb(209, 166, 79);
+        
+    }
+}

@@ -244,26 +244,3 @@ main{
 .section4 .picture img{
     height: 190px;
 }
-
-
-
-
-
-@media screen and (min-width:1024px) and (max-width: 1439px) {
-    body{
-        background-color: cadetblue;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width: 1023px) {
-    body{
-        background-color: olivedrab;
-        
-    }
-}
-
-@media screen and (max-width: 767px) {
-    body{
-        background-color: orange;
-    }
-}

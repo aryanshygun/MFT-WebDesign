@@ -12,20 +12,18 @@ footer a img:hover{
     box-sizing: border-box;
     padding: 15px 30px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
+    justify-content: start;
 }
 .footer-links .container .column{
     display: flex;
     flex-direction: column;
     gap: 7px;
+    width: 25%;
 }
-.on-left{
-    flex: 1;
-}
-.on-right{
-    flex: 3;
-}
+
 .footer-links .container .column h2{
     font-size: 20px;
     font-weight: lighter;
@@ -54,13 +52,15 @@ footer a img:hover{
     box-sizing: border-box;
     padding: 15px 30px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: start;
     gap: 20px;
 }
 .footer-company .container .column{
     display: flex;
     flex-direction: column;
-    width: 48%;
+    width: 50%;
+
 }
 .footer-company .container .column h2{
     font-size: 20px;
@@ -106,7 +106,9 @@ footer a img:hover{
 .footer-product .container .column{
     display: flex;
     flex-direction: column;
-    width: 48%;
+    width: 50%;
+    gap: 20px;
+
 }
 .footer-product .container .column h2{
     font-size: 20px;
@@ -198,21 +200,122 @@ footer a img:hover{
 
 
 
-@media screen and (min-width:1024px) and (max-width: 1439px) {
-    body{
-        background-color: cadetblue;
-    }
-}
+@media  (min-width:900px) and (max-width: 1439px) {
 
-@media screen and (min-width:768px) and (max-width: 1023px) {
-    body{
-        background-color: olivedrab;
+    .footer-links .container{
+        justify-content: start;
+    }
+    .footer-company .container .column{
+        width: 50%;
+        gap: 20px;
         
     }
-}
+    .footer-product .container{
+        width: 1440px;
+        box-sizing: border-box;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .footer-product .container .column{
+        width: 100%;
+    }
+    .footer-product .product{
+        width: 33%;
+    }
 
-@media screen and (max-width: 767px) {
-    body{
-        background-color: orange;
+    .footer-legal .container{
+        display: block;
+        display: flex;
+        gap: 30px;
+    }
+    .right{
+        justify-content: left;
+    }
+    .footer-legal .container .text{
+        justify-content: start;
+    }
+    .vertical{
+        width: 100%;
+    }
+    .footer-legal .container .links{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 899px) {
+
+    .footer-links .container{
+        justify-content: center;
+        
+    }
+
+    .footer-links .container{
+        justify-content: center;
+        align-content: center;
+        gap: 50px;
+    }
+
+    .footer-links .container .column{
+        width: 290px;
+
+        align-items: center;
+    }
+    
+
+    .footer-company .container{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        
+    }
+    .footer-company .container .column{
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .footer-product .container{
+        width: 1440px;
+        display: flex;
+        gap: 40px;
+        flex-direction: column;  
+        align-items: center;
+    }
+
+    .footer-product .container .products{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-product .container .products a{
+        justify-content: center;
+    }
+
+    .footer-product .container .column{
+        width: 50%;
+        align-items: center;
+    }
+
+    .footer-legal .container{
+        gap: 30px;
+    }
+
+    .right,
+    .left{
+        justify-content: center;
+    }
+
+    .footer-legal .container .text{
+        justify-content: center;
+    }
+    .vertical{
+        width: 100%;
+    }
+    .footer-legal .container .links{
+        width: 100%;
     }
 }
