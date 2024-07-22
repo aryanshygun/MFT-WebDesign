@@ -13,144 +13,80 @@
 <body>
     <!-- <header> --> 
         <!-- cant use header because of position sticky not working -->
+         <!-- header wont stick to the page under the 1200px width -->
         <div class="header">
             <div class="header-top">
                 <div class="container">
                     <a href="#">
-                        Exclusive news, data and analytics for financial market professionals
+                        <div class="text">
+                            Exclusive news, data and analytics for financial market professionals
+                        </div>
                         <p>LSEG</p>
                     </a>
                 </div>
             </div>
-            <div class="header-bot">
+            <div class="header-mid">
                 <div class="container">
-                    <a class="header-bot-left" href="#">
+                    <a class="header-mid-left" href="#">
                         <img src="images/circular logo.png" alt="logo">
-                        <p>Reuters</p>
+                        <h3>
+                            Reuters
+                        </h3>
                     </a>
-                    <div class="header-bot-center">
-                        <a href="#">
-                            World
-                            <img src="images/chevron down.png" alt="">
-                        </a>
-                        <a href="#">
-                            Business
-                            <img src="images/chevron down.png" alt="">
-                        </a>
-                        <a href="#">
-                            Markets
-                            <img src="images/chevron down.png" alt="">
-                        </a>
-                        <a href="#">
-                            Sustainability
-                            <img src="images/chevron down.png" alt="">
-                        </a>
-                        <a href="#">
-                            Legal
-                            <img src="images/chevron down.png" alt="">
-                        </a>
-                        <a href="#">
-                            Breakingviews
-                            <img src="images/chevron down.png" alt="">
-                        </a>
-                        <a href="#">
-                            Technology
-                            <img src="images/chevron down.png" alt="">
-                        </a>
-                        <a href="#">
-                            Investigations
-                        </a>
-                        <a href="#">
-                            More
-                            <img src="images/chevron down.png" alt="">
-                        </a>
-                    </div>
-                    <div class="header-bot-right">
-                        <a class="mynews" href="#">
-                            <p>My News</p>
-                        </a>
-                        <a class="search" href="#">
-                            <img src="images/search.png" alt="">
-                        </a>
-                        <a class="signin-button" href="#">
-                            Sign In
-                        </a>
-                        <a class="register-button" href="#">
-                            Register
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header tablet">
-            <div class="header-top">
-                <div class="container">
-                    <a href="#">
-                        Exclusive news, data and analytics for financial market professionals
-                        <p>LSEG</p>
-                    </a>
-                </div>
-            </div>
-            <div class="header-bot">
-                <div class="container">
-                    <a class="header-bot-left" href="#">
-                        <img src="images/circular logo.png" alt="logo">
-                        <p>Reuters</p>
-                    </a>
-                    <div class="header-bot-center">
-                        <div>
+                    <div class="header-mid-center">
+                        <div class="menu-item hide4">
                             <a href="#">
                                 World
                                 <img src="images/chevron down.png" alt="">
                             </a>
                         </div>
-                        <div>
+                        <div class="menu-item hide4">
                             <a href="#">
                                 Business
                                 <img src="images/chevron down.png" alt="">
                             </a>
                         </div>
-                        <div>
+                        <div class="menu-item hide3">
                             <a href="#">
                                 Markets
                                 <img src="images/chevron down.png" alt="">
                             </a>
                         </div>
-                        <div class="hide2">
+                        <div class="menu-item hide3">
                             <a href="#">
                                 Sustainability
                                 <img src="images/chevron down.png" alt="">
                             </a>
 
                         </div>
-                        <div class="hide2">
+                        <div class="menu-item hide2">
                             <a href="#">
                                 Legal
                                 <img src="images/chevron down.png" alt="">
                             </a>
 
                         </div>
-                        <div class="hide1">
+                        <div class="menu-item hide2">
                             <a href="#">
                                 Breakingviews
                                 <img src="images/chevron down.png" alt="">
                             </a>
 
                         </div>
-                        <div class="hide1">
+                        <div class="menu-item hide1">
                             <a href="#">
                                 Technology
                                 <img src="images/chevron down.png" alt="">
                             </a>
 
                         </div>
-                        <div>
+                        <div class="menu-item hide1">
                             <a href="#">
                                 Investigations
                             </a>
 
                         </div>
-                        <div>
+                        <div class="menu-item">
                             <a href="#">
                                 More
                                 <img src="images/chevron down.png" alt="">
@@ -159,10 +95,12 @@
                         </div>
 
                     </div>
-                    <div class="header-bot-right">
-                        <a class="mynews" href="#">
-                            <p>My News</p>
-                        </a>
+                    <div class="header-mid-right">
+                        <div class="menu-item">
+                            <a href="#">
+                                My News
+                            </a>
+                        </div>
                         <a class="search" href="#">
                             <img src="images/search.png" alt="">
                         </a>
@@ -176,7 +114,7 @@
                 </div>
             </div>
         </div>
-        <div class="sub-header laptop">
+        <!-- <div class="header-bot laptop">
             <div class="container">
                 <div class="prices">
                     <div class="price">
@@ -221,51 +159,72 @@
                     Get real-time market data from LSEG
                 </a>
             </div>
-        </div>
-        <div class="sub-header tablet">
+        </div> -->
+        <div class="header-bot tablet">
             <div class="container">
                 <div class="prices">
-                    <div class="price">
-                        <img src="images/downtrend.png" alt="">
-                        <a href="">SPX</a>
-                        <p class="number">5,549</p>
-                        <p class="percent-red">-0.78%</p>
+
+                    <div class="price hide4">
+                        <a href="#">
+                            <img src="images/downtrend.png" alt="">
+                            SPX
+                            <p class="number">5,549</p>
+                            <p class="percent-red">-0.78%</p>
+                        </a>
                     </div>
-                    <div class="price">
-                        <img src="images/downtrend.png" alt="">
-                        <a href="">IXIC</a>
-                        <p class="number">17,871.22</p>
-                        <p class="percent-red">-0.70%</p>
+
+                    <div class="price hide4">
+                        <a href="#">
+                            <img src="images/downtrend.png" alt="">
+                            IXIC
+                            <p class="number">17,871.22</p>
+                            <p class="percent-red">-0.70%</p>
+                        </a>
                     </div>
-                    <div class="price">
-                        <img src="images/downtrend.png" alt="">
-                        <a href="">DJI</a>
-                        <p class="number">40,665,02</p>
-                        <p class="percent-red">-1.29%</p>
+
+                    <div class="price hide3">
+                        <a href="#">
+                            <img src="images/downtrend.png" alt="">
+                            DJI
+                            <p class="number">40,665,02</p>
+                            <p class="percent-red">-1.29%</p>
+                        </a>
                     </div>
+
                     <div class="price hide2">
-                        <img src="images/downtrend.png" alt="">
-                        <a href="">STOXX</a>
-                        <p class="number">514.01</p>
-                        <p class="percent-red">-0.16%</p>
+                        <a href="#">
+                            <img src="images/downtrend.png" alt="">
+                            STOXX
+                            <p class="number">514.01</p>
+                            <p class="percent-red">-0.16%</p>
+                        </a>
                     </div>
+
                     <div class="price hide1">
-                        <img src="images/uptrend.png" alt="">
-                        <a href="">FTSE</a>
-                        <p class="number">8,204.89</p>
-                        <p class="percent-green">+0.21%</p>
+                        <a href="#">
+                            <img src="images/uptrend.png" alt="">
+                            FTSE
+                            <p class="number">8,204.89</p>
+                            <p class="percent-green">+0.21%</p>
+                        </a>
                     </div>
+
                     <div class="price hide1">
-                        <img src="images/downtrend.png" alt="">
-                        <a href="">N225</a>
-                        <p class="number">40,052.65</p>
-                        <p class="percent-red">-0.18%</p>
+                        <a href="#">
+                            <img src="images/downtrend.png" alt="">
+                            N225
+                            <p class="number">40,052.65</p>
+                            <p class="percent-red">-0.18%</p>
+                        </a>
                     </div>
+
                 </div>
+
                 <a href="#" class="ad">
                     <img src="images/right.png" alt="">
                     Get real-time market data from LSEG
                 </a>
+
             </div>
         </div>
     <!-- </header> -->

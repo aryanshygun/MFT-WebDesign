@@ -1,32 +1,44 @@
-body{
-    margin: 0px;
-}
-
+/* 0 - global header */
 .header{
     background-color: white;
-    top: 0px;
+    top: 0;
     position: sticky;
+    z-index: 1000;
 }
 
-.header-top{
-    border-top: 2px solid white;
-    background-color: black;
+.header a:hover,
+.header-bot a:hover{
+    filter: none;
+}
+
+.header .container,
+.header-bot .container{
+    width: 1440px;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.header-top,
+.header-mid,
+.header-bot{
     display: flex;
     justify-content: center;
 }
+
+/* 1 - header top */
+.header-top{
+    border-top: 2px solid white;
+    background-color: black;
+}
+
 .header-top .container{
-    width: 1440px;
-    padding: 3px 30px;
-    box-sizing: border-box;
-    display: flex;
     justify-content: flex-end;
-    gap: 30px;
 }
 
 .header-top a{
-    text-decoration: none;
     color: white; 
-    margin: 0px;
+    margin: 3px 0px;
 }
 .header-top a:hover{
     text-decoration-line: underline;
@@ -36,85 +48,59 @@ body{
     color: white;
     display: inline-block;
     padding: 2px 5px;
-    font-weight: bold;
+    font-weight: 500;
+    margin-left: 10px;
 }
 
+/* 2 - header mid - bot */
+.header-mid,
 .header-bot{
-    display: flex;
-    justify-content: center;
     border-bottom: 1px solid darkgray;
     padding: 10px 0px;
 }
+
+.header-mid .container,
 .header-bot .container{
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1440px;
-    box-sizing: border-box;
-    padding: 0px 30px;
 }
+
+.header-mid a:hover,
 .header-bot a:hover{
     text-decoration: none;
 }
-.sub-header a:hover{
-    text-decoration: none;
+
+.header-mid{
+    font-size: 14px;
 }
 
-.header-bot-left{
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    color: black;
-    font-size: 25px;
-    align-items: center;
-}
-
-.header-bot-left img{
+.header-mid-left img{
     width: 40px;
     padding-right: 5px;
 }
 
-.header-bot-center{
+.header-mid-center{
     display: flex;
-    justify-content: start;
     gap: 10px;
-    font-size: 14px;
-}
-.header-bot-center a{
-    display: flex;
 }
 
-.header-bot-center a img{
+.menu-item img{
     width: 10px;
     margin-left: 5px;
 }
-.header-bot-center div{
+
+.menu-item{
     align-content: center;
     height: 100%;
 }
-.header-bot-center div:hover{
+
+.menu-item:hover{
     border-bottom: 4px solid orangered;
-    margin-bottom: -4px;
 }
 
-.header-bot-right{
+.header-mid-right{
     display: flex;
-    flex-direction: row;
-    align-items: center;
     gap: 5px;
-}
-
-.mynews{
-    text-decoration: none;
-    color: black;
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    padding: 13px 0px;
-}
-.mynews:hover{
-    border-bottom: 4px solid orangered;
-    margin-bottom: -4px;
 }
 
 .search img{
@@ -122,114 +108,60 @@ body{
     border-radius: 5px;
 }
 
-.search img:hover{
-    box-shadow: 0px 0px 10px  rgb(223, 223, 223);
-    filter: none;
+.search img:hover,
+.signin-button:hover,
+.register-button:hover{
+    box-shadow: 0px 0px 10px  rgb(132, 132, 132);
 }
 
-
-.signin-button{
-    border: 1px solid rgb(80, 80, 80);
-    border-radius: 5px;
-    padding: 10px 20px;
-    color: rgb(80, 80, 80);
-    text-decoration: none;
-    transition: box-shadow .3s ease;
-}
-.signin-button:hover{
-    box-shadow: 0px 0px 10px  rgb(223, 223, 223);
-    color: black;
+.signin-button,
+.register-button{
     border: 1px solid rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease;
 }
 
 .register-button{
     background-color: black;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 5px;
-    padding: 10px 20px;
     color: white;
-    text-decoration: none;
-    transition: box-shadow .3s ease, background-color .3s ease;
-}
-.register-button:hover{
-    background-color: rgb(65, 65, 65);
-    box-shadow: 0px 0px 10px  rgb(223, 223, 223);
-}
-
-.sub-header{
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid darkgray;
-    padding: 10px 0px;
-}
-.sub-header .container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 1440px;
-    box-sizing: border-box;
-    padding: 0 30px;
 }
 
 .prices{
     display: flex;
-    flex-direction: row;
-    background-color: red;
+    gap: 10px;
 }
 
-.price{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 3px;
+.header-bot a{
     font-size: 15px;
-}
-.price img{
-    width: 15px;
-}
-.price a{
     text-decoration: none;
     color: black;
 }
-.price .number{
-    font-weight: lighter;
+
+.header-bot img{
+    width: 15px;
 }
-.price .percent-red{
-    font-weight: lighter;
+
+.header-bot .percent-red{
     color: darkred;
 }
-.price .percent-green{
-    font-weight: lighter;
+
+.header-bot .percent-green{
     color: darkgreen;
 }
 
-.sub-header .ad {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-}
-.sub-header .ad img{
-    width: 20px;
-    margin-right: 5px;
-}
-
-
-
-
-
-
-@media screen and (min-width:1024px) and (max-width: 1365px) {
+@media screen and (min-width:1024px) and (max-width: 1300px) {
     .hide1{
         background-color: red;
         display: none;
     }
 }
 
-@media screen and (min-width:768px) and (max-width: 1023px) {
+@media screen and (min-width:900px) and (max-width: 1023px) {
+    .header-top .container{
+        justify-content: center;
+    }
+
     .hide1,
     .hide2{
         background-color: red;
@@ -237,7 +169,38 @@ body{
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width:768px) and (max-width: 899px) {
+    .header-top .container{
+        justify-content: center;
+    }
 
+    .hide1,
+    .hide2,
+    .hide3{
+        background-color: red;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header-top a .text{
+        display: none;
+    }
+    .header-top .container,
+    .header-bot .container{
+        justify-content: center;
+    }
+    .signin-button,
+    .register-button{
+        display: none;
+    }
+
+    .hide1,
+    .hide2,
+    .hide3,
+    .hide4{
+        background-color: red;
+        display: none;
+    }
 
 }
