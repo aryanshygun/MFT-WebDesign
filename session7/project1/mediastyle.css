@@ -1,12 +1,12 @@
 
-@media screen and (min-width:900px) and (max-width: 1439px) {
+@media screen and (min-width:768px) and (max-width: 1365px) {
     body{
-        background-color: cadetblue;
+        background-color: rgb(173, 223, 225);
     }
     
 }
 
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 767px) {
     body{
         background-color: rgb(209, 166, 79);
         

@@ -11,7 +11,8 @@
 
 </head>
 <body>
-    <header>
+    <!-- <header> --> 
+        <!-- cant use header because of position sticky not working -->
         <div class="header">
             <div class="header-top">
                 <div class="container">
@@ -81,7 +82,101 @@
                 </div>
             </div>
         </div>
-        <div class="sub-header">
+        <div class="header tablet">
+            <div class="header-top">
+                <div class="container">
+                    <a href="#">
+                        Exclusive news, data and analytics for financial market professionals
+                        <p>LSEG</p>
+                    </a>
+                </div>
+            </div>
+            <div class="header-bot">
+                <div class="container">
+                    <a class="header-bot-left" href="#">
+                        <img src="images/circular logo.png" alt="logo">
+                        <p>Reuters</p>
+                    </a>
+                    <div class="header-bot-center">
+                        <div>
+                            <a href="#">
+                                World
+                                <img src="images/chevron down.png" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                Business
+                                <img src="images/chevron down.png" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                Markets
+                                <img src="images/chevron down.png" alt="">
+                            </a>
+                        </div>
+                        <div class="hide2">
+                            <a href="#">
+                                Sustainability
+                                <img src="images/chevron down.png" alt="">
+                            </a>
+
+                        </div>
+                        <div class="hide2">
+                            <a href="#">
+                                Legal
+                                <img src="images/chevron down.png" alt="">
+                            </a>
+
+                        </div>
+                        <div class="hide1">
+                            <a href="#">
+                                Breakingviews
+                                <img src="images/chevron down.png" alt="">
+                            </a>
+
+                        </div>
+                        <div class="hide1">
+                            <a href="#">
+                                Technology
+                                <img src="images/chevron down.png" alt="">
+                            </a>
+
+                        </div>
+                        <div>
+                            <a href="#">
+                                Investigations
+                            </a>
+
+                        </div>
+                        <div>
+                            <a href="#">
+                                More
+                                <img src="images/chevron down.png" alt="">
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <div class="header-bot-right">
+                        <a class="mynews" href="#">
+                            <p>My News</p>
+                        </a>
+                        <a class="search" href="#">
+                            <img src="images/search.png" alt="">
+                        </a>
+                        <a class="signin-button" href="#">
+                            Sign In
+                        </a>
+                        <a class="register-button" href="#">
+                            Register
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-header laptop">
             <div class="container">
                 <div class="prices">
                     <div class="price">
@@ -127,7 +222,53 @@
                 </a>
             </div>
         </div>
-    </header>
+        <div class="sub-header tablet">
+            <div class="container">
+                <div class="prices">
+                    <div class="price">
+                        <img src="images/downtrend.png" alt="">
+                        <a href="">SPX</a>
+                        <p class="number">5,549</p>
+                        <p class="percent-red">-0.78%</p>
+                    </div>
+                    <div class="price">
+                        <img src="images/downtrend.png" alt="">
+                        <a href="">IXIC</a>
+                        <p class="number">17,871.22</p>
+                        <p class="percent-red">-0.70%</p>
+                    </div>
+                    <div class="price">
+                        <img src="images/downtrend.png" alt="">
+                        <a href="">DJI</a>
+                        <p class="number">40,665,02</p>
+                        <p class="percent-red">-1.29%</p>
+                    </div>
+                    <div class="price hide2">
+                        <img src="images/downtrend.png" alt="">
+                        <a href="">STOXX</a>
+                        <p class="number">514.01</p>
+                        <p class="percent-red">-0.16%</p>
+                    </div>
+                    <div class="price hide1">
+                        <img src="images/uptrend.png" alt="">
+                        <a href="">FTSE</a>
+                        <p class="number">8,204.89</p>
+                        <p class="percent-green">+0.21%</p>
+                    </div>
+                    <div class="price hide1">
+                        <img src="images/downtrend.png" alt="">
+                        <a href="">N225</a>
+                        <p class="number">40,052.65</p>
+                        <p class="percent-red">-0.18%</p>
+                    </div>
+                </div>
+                <a href="#" class="ad">
+                    <img src="images/right.png" alt="">
+                    Get real-time market data from LSEG
+                </a>
+            </div>
+        </div>
+    <!-- </header> -->
     
     <main>
         <div class="section1">
@@ -329,15 +470,14 @@
     <footer>
         <div class="footer-links">
             <div class="container">
-                
                 <div class="column">
-                    <h2>Latest</h2>
+                    <h3>Latest</h3>
                     <a href="#">Home</a>
                     <a href="#">Authors</a>
                     <a href="#">Topic Sitemap</a>
                 </div>
                 <div class="column">
-                    <h2>Media</h2>
+                    <h3>Media</h3>
                     <a href="#">
                         <img src="images/videos.png" alt="">
                         Videos
@@ -352,7 +492,7 @@
                     </a>
                 </div>
                 <div class="column">
-                    <h2>Browse</h2>
+                    <h3>Browse</h3>
                     <a href="#">World</a>
                     <a href="#">Business</a>
                     <a href="#">Markets</a>
@@ -367,7 +507,7 @@
                     
                 </div>
                 <div class="column">
-                    <h2>About Reuters</h2>
+                    <h3>About Reuters</h3>
                     <a href="">
                         About Reuters
                         <img src="images/out.png" alt="">
@@ -395,7 +535,7 @@
                         Reuters Diversity Report
                         <img src="images/out.png" alt="">
                     </a>
-                    <h2>Stay Informed</h2>
+                    <h3>Stay Informed</h3>
                     <a href="">
                         Download App (IOS)
                         <img src="images/out.png" alt="">
@@ -414,11 +554,11 @@
         <div class="footer-company">
             <div class="container">
                 <div class="column">
-                    <h2>Information You can Trust</h2>
+                    <h3>Information You can Trust</h3>
                     <p>Reuters, the news and media division of Thomson Reuters, is the world’s largest multimedia news provider, reaching billions of people worldwide every day. Reuters provides business, financial, national and international news to professionals via desktop terminals, the world's media organizations, industry events and directly to consumers.</p>
                 </div>
                 <div class="column">
-                    <h2>Follow Us</h2>
+                    <h3>Follow Us</h3>
                     <div class="socials">
                         <a class="social" href="#">
                             <img src="images/twiiter.png" alt="">
@@ -442,63 +582,62 @@
         <div class="footer-product">
             <div class="container">
                 <div class="column">
-                    <h2>Thomson Reuters Products</h2>
+                    <h3>Thomson Reuters Products</h3>
                     <div class="products">
-                        <div class="product">
+                        <p>
                             <a class="link" href="#">
                                 Westlaw
                                 <img src="images/out.png" alt="">
                             </a>
-                            <p>Build the strongest argument relying on authoritative content, attorney-editor expertise, and industry defining technology.</p>
-                        </div>
-                        <div class="product">
+                            Build the strongest argument relying on authoritative content, attorney-editor expertise, and industry defining technology.
+                        </p>
+                        <p>
                             <a class="link" href="#">
                                 Onesource
                                 <img src="images/out.png" alt="">
                             </a>
-                            <p>The most comprehensive solution to manage all your complex and ever-expanding tax and compliance needs.</p>
-                        </div>
-                        <div class="product">
+                            The most comprehensive solution to manage all your complex and ever-expanding tax and compliance needs.
+                        </p>
+                        <p>
                             <a class="link" href="#">
                                 Checkpoint
                                 <img src="images/out.png" alt="">
                             </a>
-                            <p>The industry leader for online information for tax, accounting and finance professionals.</p>
-                        </div>
+                            The industry leader for online information for tax, accounting and finance professionals
+                        </p>
                     </div>
                 </div>
                 <div class="column">
-                    <h2>LSEG Products</h2>
+                    <h3>LSEG Products</h3>
                     <div class="products">
-                        <div class="product">
+                        <p>
                             <a class="link" href="#">
                                 Workspace
                                 <img src="images/out.png" alt="">
                             </a>
-                            <p>Access unmatched financial data, news and content in a highly-customised workflow experience on desktop, web and mobile.</p>
-                        </div>
-                        <div class="product">
+                            Access unmatched financial data, news and content in a highly-customised workflow experience on desktop, web and mobile.
+                        </p>
+                        <p>
                             <a class="link" href="#">
                                 DateCatalogue
                                 <img src="images/out.png" alt="">
                             </a>
-                            <p>Browse an unrivalled portfolio of real-time and historical market data and insights from worldwide sources and experts.</p>
-                        </div>
-                        <div class="product">
+                            Browse an unrivalled portfolio of real-time and historical market data and insights from worldwide sources and experts.
+                        </p>
+                        <p>
                             <a class="link" href="#">
                                 World-Check
                                 <img src="images/out.png" alt="">
                             </a>
-                            <p>Screen for heightened risk individual and entities globally to help uncover hidden risks in business relationships and human networks.</p>
-                        </div>
-    
+                            Screen for heightened risk individual and entities globally to help uncover hidden risks in business relationships and human networks.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer-legal">
             <div class="container">
-                <div class="links left vertical">
+                <div class="section left vertical">
                     <a class="link" href="">
                         Advertise With Us
                         <img src="images/out.png" alt="">
@@ -511,7 +650,7 @@
                         <img src="images/out.png" alt="">
                     </a>
                 </div>
-                <div class="links right vertical">
+                <div class="section right vertical">
                     <a class="link" href="">
                         Cookies
                         <img src="images/out.png" alt="">
@@ -536,14 +675,14 @@
                         <img src="images/out.png" alt="">
                     </a>
                 </div>
-                <div class="text vertical">
-                    <p>All quotes delayed a minimum of 15 minutes.</p>
-                    <a href="#"> See here for a complete list of exchanges and delays.</a>
-                </div>
-                <div class="text vertical">
-                    <p>© 2024 Reuters.</p>
+                <p class="section">
+                    All quotes delayed a minimum of 15 minutes.
+                    <a href="#">See here for a complete list of exchanges and delays.</a>
+                </p>
+                <p class="section">
+                    © 2024 Reuters.
                     <a href="#">All rights reserved.</a>
-                </div>
+                </p>
             </div>
         </div>
     </footer> 
