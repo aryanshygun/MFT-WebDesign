@@ -150,33 +150,20 @@
     color: darkgreen;
 }
 
-@media screen and (min-width:1024px) and (max-width: 1300px) {
+@media screen and (min-width:1024px) and (max-width: 1365px) {
     .hide1{
         background-color: red;
         display: none;
     }
 }
 
-@media screen and (min-width:900px) and (max-width: 1023px) {
+@media screen and (min-width:768px) and (max-width: 1023px) {
     .header-top .container{
         justify-content: center;
     }
 
     .hide1,
     .hide2{
-        background-color: red;
-        display: none;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width: 899px) {
-    .header-top .container{
-        justify-content: center;
-    }
-
-    .hide1,
-    .hide2,
-    .hide3{
         background-color: red;
         display: none;
     }
@@ -197,8 +184,7 @@
 
     .hide1,
     .hide2,
-    .hide3,
-    .hide4{
+    .hide3{
         background-color: red;
         display: none;
     }
