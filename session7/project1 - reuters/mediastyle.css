@@ -129,6 +129,9 @@
 }
 
 .prices{
+    /* background-color: red; */
+
+    /* align-items: center; */
     display: flex;
     gap: 10px;
 }
@@ -560,7 +563,7 @@ footer .column{
     .section2 .sidebar hr{
         width: 80%;
     }
-
+ 
     .hero .card1{
         flex-direction: column;
     }
