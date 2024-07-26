@@ -1,3 +1,7 @@
+
+html{
+    scroll-behavior: smooth;
+}
 img{
     width: 100%;
 }
@@ -45,92 +49,111 @@ body{
 }
 
 header{
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     box-shadow: 0px 1px 30px rgba(171, 171, 171, 0.471);
     position: sticky;
     top: 0px;
     background-color: white;
+    z-index: 100;
 }
+
 header .container1{
-    width: 1200px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 0px 60px;
-    height: 100px;
     box-sizing: border-box;
+    width: 1200px;
+    align-items: center;
+
 }
 
 .logo{
-    width: 15%;
+    width: 200px;
 }
-
-.menu{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 100%;
-}
-.menu .item{
-    height: 60%;
-    align-content: center;
-    padding: 0px 20px;
-    position: relative;
-    transition: background-color .5s ease;
-    transition: transform .3s ease;
-}
-.menu a{
-    text-decoration: none;
-}
-
-
-.menu .item:hover{
-    transform: scale(1.3);
-}
-
-
-.menu .dropdown{
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    left: 0px;
-    top: 60px;
-    background-color: white;
-    min-width: 200px;
-    transition: opacity .5s ease, visibility .5s ease;
-    
-}
-
-.menu .dropdown a{
-    padding: 12px 18px;
-    transition: background-color .5s ease;
-}
-
-.menu .item:hover .dropdown{
-    opacity: 1;
-    visibility: visible;
-
-}
-
-.menu .dropdown a:hover{
-    background-color: rgb(210, 210, 210);
-
-}
-
-
 
 .socials{
     display: flex;
     justify-content: end;
-    width: 15%;
+    width: 150px;
     gap: 10px;
 }
-header .button img{
+
+.socials a{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.socials a img{
     width: 80%;
+}
+
+
+
+header .container2{
+    width: 100%;
+    display: none; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px;
+    box-sizing: border-box;
+    height: 100px;
+}
+
+
+.menu-item{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+}
+
+.menu-item img{
+    width: 30%;
+}
+
+.item{
+    position: relative;
+}
+
+.menu-item a{
+    transition: transform .3s ease;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+
+}
+.menu-item a:hover{
+    transform: scale(1.3);
+}
+
+.menu-item:hover > .drop,
+.item:hover > .drop{
+    visibility: visible;
+    opacity: 1;
+}
+
+.drop{
+    min-width: 160px;
+    position: absolute;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease, visibility .5s ease;
+    background-color: white;
+}
+
+.drop .drop{
+    left: 100%;
+    top: 0;
 }
 
 main .container{
@@ -186,14 +209,18 @@ main .container{
     transform: scale(1.25);
 }
 
-
-.s3 .container{
+.s3{
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    justify-content: center;
     background-image: url(pics/landscape.png);
     background-repeat: no-repeat;
     background-size: cover;
+
+}
+.s3 .container{
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
 }
 .s3 h1,
 .s3 h2{
@@ -300,8 +327,95 @@ footer .button img{
     transform: scale(1.3);
 }
 
-/* @media screen and (max-width:1024px) {
+.table{
+    background-color: #ff988f;
+    display: flex;
+    justify-content: center;
+}
+.table .container{
+    flex-direction: column;
+    gap: 50px;
+}
+.table h1{
+    margin: 0px;
+}
 
+table {
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 0px 30px white;
+    background-color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+
+th, td {
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid black ;
+    width: 120px;
+    height: 70px;
+    transition:transform .2s ease, border .5s ease, background-color .2s ease;
+}
+
+th,
+td:nth-child(1){
+    background-color: rgb(92, 111, 251);
+    color: white;
+}
+
+th:hover,
+td:hover{
+    color: rgb(41, 41, 41);
+    transform: scale(1.2);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.568);
+    background-color: white;
+    border: 1px solid white;
+}
+
+
+
+.vinyasa{
+    background-color: #ff9661;
+}
+.hatha{
+    background-color: #ff9999;
+}
+.classic-yoga{
+    background-color: #99ffcc;
+}
+.gong{
+    background-color: #cc99ff;
+}
+.zen-yoga{
+    background-color: #8acaff;
+}
+.pilates{
+    background-color: #ff85d2;
+}
+.empty{
+    background-color: rgb(198, 196, 196);
+}
+
+@media screen and (max-width:1200px) {
+
+    header .container1{
+        display: none;
+    }
+    
+    header .container2{
+        display: flex; 
+    }
+    
+    .menu-item{
+        width: 150px;
+    }
+
+    .logo{
+        width: 300px;
+    }
 
     h1,
     h2,
@@ -318,6 +432,15 @@ footer .button img{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .s3 .imgs{
+        align-items: center;
+        gap: 50px;
+        flex-direction: column;
+    }
+    .s3 img{
+        width: 50%;
     }
 
     .s4 .container{
@@ -337,4 +460,5 @@ footer .button img{
         flex-direction: column;
         gap: 100px;
     }
-} */
+
+}

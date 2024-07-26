@@ -12,35 +12,31 @@
 <body>
     <header>
         <div class="container1">
-            <img class="logo" src="pics/logo.png" alt="">
-            <div class="menu">
-                <div class="item">
-                    <a href="#">About</a>
-                    <div class="dropdown">
-                        <a href="#">FAQ</a>
-                        <a href="#">Teacher Resources</a>
-                        <a href="#">Closed Captions</a>
-                    </div>
-                </div>
-                <div class="item"><a href="#">FWFG App</a></div>
-                <div class="item"><a href="#">Calendar</a></div>
-                <div class="item">
-                    <a href="#">Blog</a>
-                    <div class="dropdown">
-                        <a href="#">Letters</a>
-                        <a href="#">News & More</a>
-                        <a href="#">Vegeterian Recipes</a>
-                    </div>
-                </div>
+            <a href="#" class="logo">
+                <img src="pics/logo.png" alt="">
+            </a>
+            <div class="menu-item">
+                <div class="item"><a href="#introduction">Introduction</a></div>
+                <div class="item"><a href="#aboutme">About Me</a></div>
+                <div class="item"><a href="#table">Time Table</a></div>
+                <div class="item"><a href="#contactme">Contact Me</a></div>
                 <div class="item">
                     <a href="#">Free Yoga Videos</a>
-                    <div class="dropdown">
-                        <a href="#">Foundations of Yoga</a>
-                        <a href="#">Vinyasa</a>
-                        <a href="#">Yoga for weight loss</a>
+                    <div class="drop">
+                        <div class="item"><a href="#">Foundations of Yoga</a></div>
+                        <div class="item"><a href="#">Vinyasa</a></div>
+                        <div class="item"><a href="#">Yoga for weight loss</a></div>
                     </div>
                 </div>
-                <div class="item"><a href="#">Search</a></div>
+                <div class="item">
+                    <a href="#">Socials</a>
+                    <div class="drop">
+                        <div class="item"><a href="#">Youtube</a></div>
+                        <div class="item"><a href="#">Facebook</a></div>
+                        <div class="item"><a href="#">Twitter</a></div>
+                        <div class="item"><a href="#">Instagram</a></div>
+                    </div>
+                </div>
             </div>
 
             <div class="socials">
@@ -57,11 +53,56 @@
                     <img src="pics/insta.png" alt="">  
                 </a>
             </div>
+
+        </div>
+        <div class="container2">
+            <div class="menu-item">
+                <img src="pics/ham.png" alt="">
+                <div class="drop">
+                    <div class="item"><a href="#">Introduction</a></div>
+                    <div class="item"><a href="#">About Me</a></div>
+                    <div class="item"><a href="#">Time Table</a></div>
+                    <div class="item"><a href="#">Contact Us</a></div>
+                    <div class="item">
+                        <a href="#">Free Yoga Videos</a>
+                        <div class="drop">
+                            <div class="item"><a href="#">Foundations of Yoga</a></div>
+                            <div class="item"><a href="#">Vinyasa</a></div>
+                            <div class="item"><a href="#">Yoga for weight loss</a></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#">Socials</a>
+                        <div class="drop">
+                            <div class="item"><a href="#">Youtube</a></div>
+                            <div class="item"><a href="#">Facebook</a></div>
+                            <div class="item"><a href="#">Twitter</a></div>
+                            <div class="item"><a href="#">Instagram</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="logo" src="pics/logo.png" alt="">
+            <div class="socials">
+                <a class="button" href="#">
+                    <img src="pics/youtube.png" alt="">
+                </a>
+                <a class="button" href="#">
+                    <img src="pics/facebook.png" alt="">
+                </a>
+                <a class="button" href="#">
+                    <img src="pics/twiiter.png" alt=""> 
+                </a>
+                <a class="button" href="#">
+                    <img src="pics/insta.png" alt="">  
+                </a>
+            </div>
+
         </div>
 
     </header>
     <main>
-        <div class="s1">
+        <div class="s1" >
             <div class="container">
                 <div class="textwall">
                     <h1>Yoga is really the art of waking up.</h1>
@@ -79,7 +120,7 @@
                 <img class="img" src="pics/adriene 1.png" alt="">
             </div>
         </div>
-        <div class="s2">
+        <div class="s2" id="introduction">
             <div class="container">
                 <h2><span>Online Yoga Practices</span> for Every Body</h2>
                 <hr>
@@ -92,6 +133,76 @@
                 <h2><span>Continuing Ed Courses</span> for Credits</h2>
             </div>
         </div>
+        <div class="table" id="table">
+
+            <div class="container">
+                <h1>~ WEEKYLY TIMETABLE ~</h1>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                    <tr>
+                        <td>10:00 - 12:00</td>
+                        <td class="pilates">Pilates</td>
+                        <td class="hatha">Hatha</td>
+                        <td class="vinyasa">Vinyasa</td>
+                        <td class="classic-yoga">Classic Yoga</td>
+                        <td class="empty"></td>
+                        <td class="zen-yoga">Zen Yoga</td>
+                        <td class="empty"></td>
+                    </tr>
+                    <tr>
+                        <td>12:00 - 14:00</td>
+                        <td class="pilates">Pilates</td>
+                        <td class="zen-yoga">Zen Yoga</td>
+                        <td class="gong">Gong</td>
+                        <td class="hatha">Hatha</td>
+                        <td class="empty"></td>
+                        <td class="gong">Gong</td>
+                        <td class="empty"></td>
+                    </tr>
+                    <tr>
+                        <td>14:00 - 16:00</td>
+                        <td class="pilates">Pilates</td>
+                        <td class="hatha">Hatha</td>
+                        <td class="vinyasa">Vinyasa</td>
+                        <td class="classic-yoga">Classic Yoga</td>
+                        <td class="empty"></td>
+                        <td class="hatha">Hatha</td>
+                        <td class="empty"></td>
+                    </tr>
+                    <tr>
+                        <td>16:00 - 18:00</td>
+                        <td class="pilates">Pilates</td>
+                        <td class="zen-yoga">Zen Yoga</td>
+                        <td class="gong">Gong</td>
+                        <td class="hatha">Hatha</td>
+                        <td class="empty"></td>
+                        <td class="gong">Gong</td>
+                        <td class="empty"></td>
+                    </tr>
+                    <tr>
+                        <td>18:00 - 20:00</td>
+                        <td class="pilates">Pilates</td>
+                        <td class="hatha">Hatha</td>
+                        <td class="vinyasa">Vinyasa</td>
+                        <td class="classic-yoga">Classic Yoga</td>
+                        <td class="empty"></td>
+                        <td class="zen-yoga">Zen Yoga</td>
+                        <td class="empty"></td>
+                    </tr>
+
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+        </div>
         <div class="s3">
             <div class="container">
                 <h1>Create Your Daily Ritual</h1>
@@ -102,7 +213,7 @@
                 </div>
             </div>
         </div>
-        <div class="s4">
+        <div class="s4" id="aboutme">
             <div class="container">
                 <img src="pics/about adriene.jpg" alt="">
                 <div class="walltext">
@@ -118,13 +229,14 @@
 
             </div>
         </div>
+
     </main>
 
     <footer>
-        <div class="container">
+        <div class="container" id="contactme">
             <div class="logo">
                 <img src="pics/logo.png" alt="">
-                <a href="#">
+                <a href="#" >
                     Contact Us
                 </a>
             </div>
