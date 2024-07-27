@@ -11,7 +11,9 @@ a{
     text-decoration: none;
     color: black;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .header {
     background-color: rgb(0, 0, 0);
     display: flex;
@@ -21,6 +23,7 @@ a{
     position: sticky;
     top: 0;
     box-shadow: 10px 0px 20px black;
+    z-index: 100;
 }
 
 .header .menu {
@@ -168,7 +171,9 @@ a{
 }
 
 .s2 img{
-    width: 100%;
+    /* width: 100%; */
+    width: 16.6666%;
+    /* flex: 1; */
     transition: filter 0.3s ease, transform .3s ease, box-shadow .3s ease;
 }
 
