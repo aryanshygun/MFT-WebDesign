@@ -9,10 +9,11 @@ body{
     padding: 30% 10%;
 }
 .img img{
-    width: 100px;
+    width: 150px;
     animation-name: pickle;
-    animation-duration: 10s;
+    animation-duration: 3s;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
     transform: rotate(60deg);
     animation-composition: accumulate;
 }
@@ -24,8 +25,11 @@ body{
 }
 
 @keyframes pickle{
-    0%, 25%{transform: translateX(0px);}
-    25%, 50%{transform: translateX(800px);}
-    50%, 100%{transform: translate(1200px, -400px) rotate(-60deg);}
+    0%{transform: translateX(0px);}
+    25%{transform: translateX(800px);}
+    50%{transform: translate(1100px, -200px) rotate(-60deg);}
+    100%{transform: translate(1400px, -600px) rotate(-180deg);}
+    
+    /* 75 */
     /* 40%, 100%{transform: translate(100px, 100px);} */
 }
