@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             topics[i].style.width = '0px';
             topics[i].style.padding = '0px';
             closeAll()
-            background.style.transform = 'translateY(0%)'
+            // background.style.transform = 'translateY(0%)'
 
         }
     }
@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isToggled) {
             hideTopics();
             toggleImage.style.transform = 'rotate(-135deg)'
+            // closeAll()
         } else {
             showTopics();
             toggleImage.style.transform = 'rotate(0deg)'
@@ -53,13 +54,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function closeDiv(xDiv) {
         xDiv.style.opacity = '0'
-        xDiv.style.top = '0%'
+        xDiv.style.visibility = 'hidden'
     }
 
     function openDiv(xDiv) {
         xDiv.style.opacity = '1'
-        xDiv.style.top = '50%'
+        xDiv.style.visibility = 'visible'
     }
+
+
+
+    // let cyberT = false
+    // cyberLink.addEventListener('click', () => {
+    //     if (cyberT) {
+    //         closeAll()
+    //         openDiv(cyberDiv)
+    //         background.style.transform = 'translateY(0px)'
+    //     } else {
+    //         closeAll()
+    //     }
+    //     cyberT = !cyberT
+    // })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     cyberLink.addEventListener('click', () => {
         closeAll()
