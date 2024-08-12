@@ -1,8 +1,20 @@
+html{
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
 body{
     margin: 0;
     font-family: copperplate;
-    color: rgb(26, 26, 26);
     /* color: white; */
+    color: black;
+    position: relative;
+}
+
+main{
+    background-color: rgb(40, 40, 40);
+
+    transform: translateY(-379px);
 }
 
 section{
@@ -19,31 +31,70 @@ img{
     width: 100%;
     object-fit: cover;
     cursor: pointer;
-    border-radius: 25px;
-}
-p{
-    text-align: center;
 }
 
-h1,h2{
+header{
+    position: sticky;
+    top: 50%;
+    left: 95%;
+    transform: translate(-50%,-50%);
+    width: fit-content;
+    border: 1px solid rgb(0, 0, 0);
+    backdrop-filter: blur(50px);
+    border-radius: 100px;
+    padding: 5px;
+    gap: 50px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header a {
+    flex: 1;
+}
+
+header a img{
+    width: 50px;
+    transition: filter .3s ease;
+}
+
+header a:hover img{
+    filter: invert();
+}
+
+
+p{
+    text-align: center;
     margin: 0;
-    transition: all 1s ease;
+    width: 50%;
+}
+
+h1{font-size: 35px;}
+h2{font-size: 30px;}
+h3{font-size: 25px;}
+
+h1,h2,h3{
+    margin: 0;
+    transition: letter-spacing 1s ease;
 }
 h1:hover,
-h2:hover{
+h2:hover,
+h3:hover{
     letter-spacing: 5px;
 }
+
 
 article{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    width: 1200px;
+    width: 1225px;
     gap: 25px;
     justify-content: center;
-    height: 600px;
 }
-
+.carousel{
+    height: 700px;
+}
 .carousel img{
     flex: 1;
     transition: all 1s ease;
@@ -53,154 +104,269 @@ article{
     box-shadow: 0px 0px 20px rgb(48, 48, 48);
     flex: 3;
 }
-
-
-
-
 .card{
     flex: 1;
     height: 360px;
     background-size: 100%;
     color: white;
+    gap: 20px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    transition-property: border-color, box-shadow;
+    transition-property: transform, box-shadow;
     transition-duration: 1s;
     transition-timing-function: ease;
-}
-
-.card p{
-    width: 70%;
 }
 
 .card img{
     width: 100px;
 }
 
-
-#one{background-image: url(img2/bg1.png);}
-#two{background-image: url(img2/bg2.png);}
-#three{background-image: url(img2/bg3.png);}
+#one{background-image: url(img2/ink1.jpg);}
+#two{background-image: url(img2/ink2.jpg);}
+#three{background-image: url(img2/ink3.jpg);}
 
 .card:hover{
     box-shadow: inset 0px 0px 50px rgb(0, 0, 0);
+    transform: scale(1.1);
 } 
-
-
-
-
-
-
-
+.card:hover h2{
+    letter-spacing: 5px;
+}
 
 .staff{
-    /* width: 400px; */
-    /* width: 400px; */
-    /* padding: 25px; */
-    background-color: rgb(255, 156, 156);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* gap: 20px; */
-    
-    /* transition-property: border, background-color; */
-    /* transition-timing-function: ease; */
-    /* transition-duration: 1s; */
+    background-size: 100% ;
+    width: 600px;
+    aspect-ratio: 4/3;
+    gap: 10px;
+    box-sizing: border-box;
     padding: 0 50px;
-    gap: 30px;
-
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    transition-property: border, box-shadow;
+    transition-timing-function: ease;
+    transition-duration: 1s;
 }
+
 .staff:hover{
-    border: 2px solid rgb(78, 78, 78);
-    background-color: rgb(255, 189, 189);
+    box-shadow: inset 0px 0px 50px rgb(0, 0, 0);
+    }
+
+#yek{
+    background-image: url(img2/p2.jpg);
+    align-items: end;
+
+}
+#do{
+    background-image: url(img2/p1.jpg);
+    align-items: start;
 }
 
-.staff > img{
-    width: 200px;
-    aspect-ratio: 1/1;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
+#yek p{
+    text-align: end;
+}
+
+#do p{
+    text-align: start;
 }
 
 .icons{
     display: flex;
     flex-direction: row;
+    gap: 10px;
 }
 .icons img{
-    width: 20px;
-    margin: 5px;
-    filter: invert();
+    width: 30px;
     transition: transform .3s ease;
 }
 
 .icons img:hover{
     transform: scale(1.3);
-    cursor: pointer;
 }
 
-
-
-.brand{
-    background-color: rgb(3, 44, 98);
+.hero{
+    height: 500px;
+    width: 100%;
+    background-image: url(img2/hero1.jpg);
+    background-size: 100%;
     color: white;
-    width: 94%;
-    /* width: 100%; */
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
 }
 
-.brand p{
-    width: 40%;
-    text-align: center;
-}
-
-.brand a{
+.hero a{
     text-decoration: none;
     color: white;
     background-color: rgb(56, 56, 255);
-    padding: 20px;
-    transition-property: all;
+    padding: 20px 20px;
+    transition-property: background-color, color, padding;
     transition-timing-function: ease;
     transition-duration: .4s;
 }
-
-.brand a:hover{
+.hero a:hover{
     background-color: white;
     color: black;
     padding: 20px 50px;
 }
 
-.logos{
+
+
+.container{
+    width: 40%;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        transparent 10%,
+        rgba(0, 0, 0, 0.5),
+        transparent 90%,
+        transparent 100%
+    );
+}
+
+.logos {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 60%;
-    justify-content: center;
-    align-items: center;
-    /* background-color: aqua; */
+    width: fit-content;
+    animation: loop 5s linear infinite;
+}
+
+.logos:hover{
+    animation-play-state: paused;
 }
 
 .logos img{
-    /* flex: 1; */
-    width: 20%;
+    height: 100%;
     filter: invert();
     transition: background-color .4s ease;
-    height: 100%;
-    /* object-fit: cover; */
+    width: 150px;
+    display: flex;
 }
 
 .logos img:hover{
-    /* width: 30%; */
-    background-color: rgba(255, 255, 255, 0.208);
+    background-color: rgba(0, 0, 0, 0.783);
 }
 
+@keyframes loop {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-50%);}
+}
+
+#sec1{
+    background-image: url(img2/bg1.png);
+    background-size: 100% 100%;
+}
+#sec2{
+    background-image: url(img2/bg2.png);
+    background-size: 100% 100%;
+}
+#sec3{
+    background-image: url(img2/bg3.png);
+    background-size: 100% 100%;
+}
+#sec4{
+    background-image: url(img2/bg4.png);
+    background-size: 100% 100%;
+}
+
+
+@media screen and (max-width:1300px) {
+
+    main{
+        background-color: rgb(40, 40, 40);
+    
+        transform: translateY(-67px);
+    }
+    header{
+        position: sticky;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: fit-content;
+        border: 1px solid rgb(0, 0, 0);
+        backdrop-filter: blur(50px);
+        border-radius: 100px;
+        padding: 5px;
+        gap: 50px;
+        z-index: 10;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    html{
+        scroll-behavior: smooth;
+        overflow: hidden;
+        overflow: unset;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        height: fit-content;
+    }
+    
+    .card:hover{
+        box-shadow: inset 0px 0px 50px rgb(0, 0, 0);
+        transform: scale(1);
+    } 
+
+    article{
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        gap: 25px;
+        justify-content: start;
+    }
+
+    #sec1{
+        height: 2000px;
+    }
+
+
+    #sec2{
+        text-align: center;
+    }
+    #sec2 h1{
+        width: 80%;
+    }
+
+    #sec2 article{
+        flex-direction: column;
+        align-items: center;
+    }
+    #sec2 .card{
+        width: 600px;
+        aspect-ratio: 1/1;
+    }
+
+
+    #sec3 article{
+
+        align-items: center;
+    }
+
+    #sec4{
+        height: 100vh;
+    }
+
+    #sec4 .hero{
+        height: 300px;
+
+    }
+
+
+
+
+
+
+}
