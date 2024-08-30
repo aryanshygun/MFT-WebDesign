@@ -17,21 +17,12 @@ const hero2 = document.getElementById('hero2')
 const hero3 = document.getElementById('hero3')
 const hero4 = document.getElementById('hero4')
 
-
-function unselectAll(){
-    hero1.classList = 'ri-circle-line'
-    hero2.classList = 'ri-circle-line'
-    hero3.classList = 'ri-circle-line'
-    hero4.classList = 'ri-circle-line'
-}
-
-function fill(x){
-    x.classList = 'ri-circle-fill'
-}
-
 function activate(x){
-    unselectAll()
-    fill(x)
+    hero1.classList = 'color ri-circle-line'
+    hero2.classList = 'color ri-circle-line'
+    hero3.classList = 'color ri-circle-line'
+    hero4.classList = 'color ri-circle-line'
+    x.classList = 'color ri-circle-fill ri-2x'
     hero.style.backgroundImage = `url('images/${x.id}.jpg')`
 }
 
