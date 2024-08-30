@@ -15,8 +15,10 @@ nav{
 
     position: fixed;
     z-index: 100;
-    backdrop-filter: blur(20px);
-    color: white;
+    /* backdrop-filter: blur(20px); */
+    /* color: white; */
+    background-color: white;
+    
     font-weight: 600;
     font-size: 20px;
 }
@@ -59,7 +61,7 @@ nav i{
 }
 .nav-icon:hover,
 .dropdown-item:hover{
-    backdrop-filter: brightness(1.5);
+    backdrop-filter: brightness(0.8);
 }
 
 .dropdown {
@@ -77,7 +79,9 @@ nav i{
     left: 0;
 
     min-width: 160px;
-    backdrop-filter: blur(20px);
+    /* backdrop-filter: blur(20px); */
+    background-color: white;
+
     transition: all .3s ease;
     z-index: 100;
 }
@@ -90,12 +94,13 @@ nav i{
 }
 
 
-.hero {
-    height: 90vh;
-    background-image: url('images/hero.jpg');
+#hero {
+    height: 100vh;
+    background-image: url('images/hero1.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
+    /* transition: background .3s ease; */
 }
 
 
@@ -109,7 +114,7 @@ nav i{
     align-items: center;
     color: rgba(255, 255, 255, 0.9);
     text-align: center;
-    gap: 20px;
+    gap: 50px;
 }
 .hero-text h2 {
     font-size: 40px;
@@ -151,4 +156,18 @@ nav i{
 .buttons a:hover{
     padding: 20px 80px;
     box-shadow: 0px 0px 20px rgb(47, 47, 47);
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.slider i{
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.slider i:hover{
+    transform: scale(1.3);
 }
