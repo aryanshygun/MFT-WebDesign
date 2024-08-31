@@ -2,15 +2,18 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: ##edeeef;
+    background-color: #edeeef;
     margin: 0;
     font-family: Nunito;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: rgb(35, 35, 35);
+    /* gap: 50px; */
 }
-
+h1,h2,h3,p{
+    margin: 0;
+}
 nav{
     width: 95%;
     margin: 15px;
@@ -20,14 +23,25 @@ nav{
     align-items: center;
     position: fixed;
     z-index: 100;
+}
+nav i {
+    color: orangered;
+    padding-left: 5px;
+}
+.neu{
     font-size: 20px;
-    border-radius: 50px;
-    backdrop-filter: blur(100px);
+    font-weight: 100;
     background-color: #e0e0e064;
     box-shadow:  2px 2px 5px #b8b9be, -3px -3px 7px #fff;
+    backdrop-filter: blur(100px);
+    color: rgb(35, 35, 35);
+    border-radius: 50px;
+    border: 1px solid rgba(190, 190, 190, 0.479);
+    text-decoration: none;
+    text-align: center;
+    transition: all .3s ease;
 
 }
-
 .navbar{
     display: flex;
     flex-direction: row;
@@ -45,28 +59,12 @@ nav{
     align-items: center;
     transition: all .3s ease;
 }
-.nav-icon{
-    border-radius: 10px;
-    text-decoration: none;
-    color: #353535;
-    /* background: linear-gradient(145deg, #cacaca, #f0f0f0);    */
-    box-shadow:  2px 2px 5px #b8b9be, -3px -3px 7px #fff;
-}
+
 .logo{
     font-size: 40px;
     font-weight: 700;
     color: orangered;
 }
-.quote{
-    border-radius: 50px;
-    box-shadow:  2px 2px 5px #b8b9be, -3px -3px 7px #fff;
-
-}
-
-.logo:hover{
-    letter-spacing: 10px;
-}
-
 .nav-icon:hover,
 .quote:hover{
     background: rgb(255, 104, 49);
@@ -75,43 +73,40 @@ nav{
     color: #e0e0e0;
 }
 
-.dropdown-content {
-    display: flex;
-    flex-direction: column;
-    color: rgb(34, 34, 34);
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    top: 120%;
-    left: 0;
-    gap: 10px;
-    min-width: 204px;
-    transition: all .3s ease;
-}
-
-.dropdown-item {
-    padding: 12px 14px;
-    border-radius: 10px;
-    background-color: #e0e0e0;
-    box-shadow:  2px 2px 5px #b8b9be, -3px -3px 7px #fff;
-    transition: all 0.3s ease;
-}
-
-
-.dropdown-item:hover{
-    background: rgb(255, 104, 49);
-    box-shadow: inset 2px 2px 15px rgb(255, 0, 0),inset -3px -3px 7px #fff;
-    color: #e0e0e0;
+.logo:hover{
+    letter-spacing: 10px;
 }
 
 .dropdown {
     position: relative;
 }
 
-section{
-    width: 100%;
-    height: 100vh;
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    gap: 10px;
+    transition: all .3s ease;
 }
+
+.dropdown-item {
+    padding: 12px 14px;
+    width: 115px;
+    background-color: #e0e0e0;
+}
+
+
+.dropdown-item:hover{
+    width: 175px;
+    background: rgb(255, 104, 49);
+    box-shadow: inset 2px 2px 15px rgb(255, 0, 0),inset -3px -3px 7px #fff;
+    color: #e0e0e0;
+}
+
 
 #hero {
     background-image: url('images/hero1.jpg');
@@ -121,41 +116,31 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 80vh;
+    width: 100%;
 }
 
 
 .hero-text {
     width: 50%;
-    border-radius: 50px;
-    padding: 50px;
-
+    height: 70%;
+    padding: 30px;
     box-sizing: border-box;
-    backdrop-filter: blur(10px);
-    box-shadow:  2px 2px 5px #b8b9be, -3px -3px 7px #fff;
-
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    color: rgb(34, 34, 34);
-    text-align: center;
-    gap: 50px;
+    gap: 30px;
 }
 
 .hero-text h2 {
-    font-size: 40px;
-    font-weight: 500;
-    margin: 0;
+    font-size: 30px;
+    font-weight: 900;
     color: orangered;
 }
 
 .hero-text h1{
-    font-size: 70px;
-    margin: 0;
-}
-.hero-text p{
-    width: 100%;
-    font-size: 25px;
-    margin: 0;
+    font-size: 40px;
 }
 
 .buttons{
@@ -165,30 +150,18 @@ section{
 }
 
 .buttons a{
-    text-decoration: none;
-    transition: all .3s ease;
-
-    border-radius: 10px;
-    box-shadow:  2px 2px 5px #b8b9be, -3px -3px 7px #fff;
-
-    background-color: #e0e0e0;
-    color: rgb(35, 35, 35);
-    font-size: 20px;
     padding: 20px 50px;
-
 }
-
-#al{
-    background-color: orangered;
-
-    color: #e0e0e0;
-}
-
-#ar:hover{
+.buttons a:hover{
     background: rgb(255, 104, 49);
     box-shadow: inset 2px 2px 15px rgb(255, 0, 0),inset -3px -3px 7px #fff;
     color: #e0e0e0;
     padding: 20px 70px;
+}
+
+#al{
+    background-color: orangered;
+    color: #e0e0e0;
 }
 
 #al:hover{
@@ -215,45 +188,67 @@ section{
 #tablets{
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
-    /* height: 1000px; */
-    /* justify-content: space-between; */
+    width: 100%;
+    padding: 100px 200px;
+    box-sizing: border-box;
     justify-content: center;
     align-items: center;
-    /* height: 500px; */
-    gap: 20px;
-
-    /* gap: 20px; */
-    /* flex-direction: row; */
+    gap: 50px;
 }
 
 .color{
     color: orangered;
 }
 
+article{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 150px;
+}
+#top{
+    height: 250px;
+}
 #topcard{
-    width: 40%;
-    margin: 0 200px;
+    flex: unset;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    /* just */
 }
+
 .card{
-    /* background-color: cadetblue; */
-    box-shadow: 0px 0px 10px gray;
-    width: 28%;
+    flex: 1;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    gap: 20px;
-    text-align: start;
-    color: rgb(31, 31, 31);
+    box-sizing: border-box ;
+    height: 100%;
+    /* transition: all .3s ease; */
 }
+.card:hover{
+    flex: 2;
+    box-shadow: inset 2px 2px 5px #b8b9be,inset -3px -3px 7px #fff;
 
+}
 .card .text{
+    box-sizing: border-box ;
+
     display: flex;
     flex-direction: column;
-    /* gap: 20px; */
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.card p{
+    display: -webkit-box;            
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;               
+    width: 80%;
+    text-align: center;
 }

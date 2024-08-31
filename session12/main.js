@@ -45,3 +45,15 @@ hero4.addEventListener('click', () => {
 const arrowRight = document.getElementById('arrow-right')
 const arrowLeft = document.getElementById('arrow-left')
 
+const cards = document.querySelectorAll('.card');
+cards.forEach(card => {
+    const icon = card.querySelector('.color');
+
+    card.addEventListener('mouseover', () => {
+        icon.className = icon.className.replace('line', 'fill');
+    });
+
+    card.addEventListener('mouseout', () => {
+        icon.className = icon.className.replace('fill', 'line');
+    });
+});
