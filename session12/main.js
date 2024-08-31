@@ -10,6 +10,17 @@ navPages.addEventListener('click', () => {
         ddown.style.opacity = '1';
     }
 })
+const navPages2 = document.getElementById('dropbutton2')
+const ddown2 = document.getElementById('ddrop2')
+navPages2.addEventListener('click', () => {
+    if (ddown2.style.visibility === 'visible') {
+        ddown2.style.visibility = 'hidden';
+        ddown2.style.opacity = '0';
+    } else {
+        ddown2.style.visibility = 'visible';
+        ddown2.style.opacity = '1';
+    }
+})
 
 const hero = document.getElementById('hero')
 const hero1 = document.getElementById('hero1')
@@ -55,5 +66,20 @@ cards.forEach(card => {
 
     card.addEventListener('mouseout', () => {
         icon.className = icon.className.replace('fill', 'line');
+    });
+});
+
+
+const holders = document.querySelectorAll('.holder');
+
+holders.forEach(holder => {
+    const paragraph = holder.querySelector('.pp');
+
+    holder.addEventListener('mouseover', () => {
+        paragraph.style.opacity = '1';
+    });
+
+    holder.addEventListener('mouseout', () => {
+        paragraph.style.opacity = '0';
     });
 });
