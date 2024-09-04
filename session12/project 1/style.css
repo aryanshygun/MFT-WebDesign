@@ -145,7 +145,7 @@ h1,h2,h3,p{
 }
 
 .side-nav{
-    width: 9%;
+    width: 5%;
     min-width:  70px;
     gap: 20px;
     display: flex;

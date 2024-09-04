@@ -206,3 +206,11 @@ label{
     width: auto;
 }
 
+
+@media screen and (max-width:800px) {
+    .name,
+    .address,
+    article{
+        flex-direction: column;
+    }
+}
