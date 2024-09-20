@@ -1,13 +1,11 @@
-x = 294
-bi = 2
-let xlist = []
+let x = 294
+const bi = 2
+let xstr = ''
 
-while (x >= bi){
-
-    xlist.push(x % bi)
+while (x > 0) {
+    
+    xstr += (x % bi)
     x = Math.floor(x / bi)
 }
 
-xlist.push(x)
-
-console.log(xlist.reverse().join('')) 
+console.log(xstr)
